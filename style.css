@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4EDDB;
+}
+
+header .navbar{
+    background-color: #118877;
+    width: 100%;
+    max-width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 1000px;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+}
+
+header .navbar .navbar-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: right;
+    gap: 3rem 1rem;
+}
+
+header .navbar .navbar-list li {
+    position: relative;
+    list-style-type: none;
+}
+
+header .navbar .navbar-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F4EDDB;
+    transition: all 0.1s ease-in-out;
+}
+
+header .navbar  .navbar-list li:hover a {
+    background-color: #F4EDDB;
+    color: #118877;
+}
+
+.home-page {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    background-color: F4EDDB;
+    position: relative;
+    width: 100%;
+    padding: 500px 15% 100px;
+    right: 300px;
+}
+
+.home-container h1 {
+    font-size: 65px;
+    color: #118877;
+    animation: go-right 1s ease-out forwards;
+    margin: 0 0 8px;
+}
+
+@keyframes go-right {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+.home-container h3 {
+    margin: 0 0 35px;
+    font-size: 30px;
+    animation: go-up 1s ease-in-out forwards;
+    color: #05b198;
+}
+
+@keyframes go-up {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+.gallery-page {
+    background-color: rgb(208, 235, 199);
+    padding: 500px;
+    height: 100vh;
+}
+
+.gallery-text {
+    text-align: center;
+    position: relative;
+    top: 250px;
+    font-size: 50px;
+    color: #118877;
+    animation: go-bottom 1s ease-out forwards;
+}
+
+
+@keyframes go-bottom {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
